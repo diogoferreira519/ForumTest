@@ -1,0 +1,144 @@
+{
+    "topics": [
+        {
+            "id": 1,
+            "title": "Como usar React com Hooks?",
+            "likes": 120,
+            "comments": 35,
+            "profile_picture": "https://images.unsplash.com/photo-1511763391445-411d74c93227"
+        },
+        {
+            "id": 2,
+            "title": "Melhores práticas para desenvolvimento em Node.js",
+            "likes": 85,
+            "comments": 27,
+            "profile_picture": "https://images.unsplash.com/photo-1535713869082-4b6cdbe78a0d"
+        },
+        {
+            "id": 3,
+            "title": "Introdução ao Docker",
+            "likes": 92,
+            "comments": 40,
+            "profile_picture": "https://images.unsplash.com/photo-1502767089025-6572583499b3"
+        },
+        {
+            "id": 4,
+            "title": "Dicas para otimizar desempenho em aplicativos web",
+            "likes": 103,
+            "comments": 50,
+            "profile_picture": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df"
+        },
+        {
+            "id": 5,
+            "title": "Aprendendo Python: um guia para iniciantes",
+            "likes": 150,
+            "comments": 65,
+            "profile_picture": "https://images.unsplash.com/photo-1542282810-9c772d92839e"
+        },
+        {
+            "id": 6,
+            "title": "Estruturas de dados em JavaScript",
+            "likes": 74,
+            "comments": 23,
+            "profile_picture": "https://images.unsplash.com/photo-1505860428864-1e1e8a4a6f6a"
+        },
+        {
+            "id": 7,
+            "title": "Como configurar um servidor Apache",
+            "likes": 60,
+            "comments": 15,
+            "profile_picture": "https://images.unsplash.com/photo-1504197885-efb7e9abf81f"
+        },
+        {
+            "id": 8,
+            "title": "Trabalhando com banco de dados NoSQL",
+            "likes": 100,
+            "comments": 48,
+            "profile_picture": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+        },
+        {
+            "id": 9,
+            "title": "Guia para escrever testes automatizados",
+            "likes": 110,
+            "comments": 55,
+            "profile_picture": "https://images.unsplash.com/photo-1560174883-cb55db1f1d50"
+        },
+        {
+            "id": 10,
+            "title": "Como usar Git e GitHub no seu projeto",
+            "likes": 135,
+            "comments": 60,
+            "profile_picture": "https://images.unsplash.com/photo-1535930749574-34e9b306c966"
+        },
+        {
+            "id": 11,
+            "title": "Aprendendo a usar CSS Grid e Flexbox",
+            "likes": 97,
+            "comments": 37,
+            "profile_picture": "https://images.unsplash.com/photo-1508780709619-79562169bc64"
+        },
+        {
+            "id": 12,
+            "title": "Configuração de ambientes de desenvolvimento",
+            "likes": 88,
+            "comments": 32,
+            "profile_picture": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+        },
+        {
+            "id": 13,
+            "title": "Guia para criar componentes reutilizáveis em React",
+            "likes": 115,
+            "comments": 49,
+            "profile_picture": "https://images.unsplash.com/photo-1502772066652-27a1c887f39e"
+        },
+        {
+            "id": 14,
+            "title": "Introdução ao desenvolvimento mobile com Flutter",
+            "likes": 105,
+            "comments": 42,
+            "profile_picture": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+        },
+        {
+            "id": 15,
+            "title": "Dicas para criar uma API RESTful",
+            "likes": 140,
+            "comments": 58,
+            "profile_picture": "https://images.unsplash.com/photo-1580894743639-0f842f56554e"
+        },
+        {
+            "id": 16,
+            "title": "Como lidar com erros em aplicações web",
+            "likes": 95,
+            "comments": 33,
+            "profile_picture": "https://images.unsplash.com/photo-1485893086445-ed8500b03bd3"
+        },
+        {
+            "id": 17,
+            "title": "Trabalhando com serviços de cloud computing",
+            "likes": 89,
+            "comments": 27,
+            "profile_picture": "https://images.unsplash.com/photo-1485629002288-1c79d88d2a25"
+        },
+        {
+            "id": 18,
+            "title": "Melhores práticas para CI/CD",
+            "likes": 102,
+            "comments": 46,
+            "profile_picture": "https://images.unsplash.com/photo-1556732318-15ad446c7de1"
+        },
+        {
+            "id": 19,
+            "title": "Entendendo padrões de design de software",
+            "likes": 130,
+            "comments": 57,
+            "profile_picture": "https://images.unsplash.com/photo-1499951360447-b19be1ea9859"
+        },
+        {
+            "id": 20,
+            "title": "Como usar TypeScript no React",
+            "likes": 112,
+            "comments": 50,
+            "profile_picture": "https://images.unsplash.com/photo-1550820362-6d2fd7d57cf5"
+        }
+    ]
+}
