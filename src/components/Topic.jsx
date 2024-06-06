@@ -43,7 +43,7 @@ export default function Topic({
     await fetch(`${baseUrl}/${id}.json`, {
       method: "DELETE",
     })
-      .then(() => navigate("/"))
+      .then(() => navigate("/topics"))
       .finally(() => onDelete())
       .catch((error) => console.error("Erro ao deletar tópico:", error));
   };
@@ -64,7 +64,7 @@ export default function Topic({
       <div className="flex gap-2 justify-start items-center">
         <div className="flex flex-col gap-1">
           <img src={imageUrl} className="rounded-full size-10" />
-          <h2 className="text-md font-medium w-44 text-slate-600">
+          <h2 className="text-md font-medium text-wrap text-slate-600">
             {profile_name}
           </h2>
         </div>
@@ -101,12 +101,7 @@ export default function Topic({
         <div className="flex items-center gap-2 ">
           {Number}
           {like && <FcLike size={22} onClick={handleIcon} />}
-          {!like && (
-            <FcLikePlaceholder
-              size={22}
-              onClick={handleIcon}
-            />
-          )}
+          {!like && <FcLikePlaceholder size={22} onClick={handleIcon} />}
         </div>
       </div>
     </div>

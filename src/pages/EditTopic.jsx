@@ -52,7 +52,7 @@ export default function EditTopic() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(editActualTopic),
     })
-      .then(() => navigate("/"))
+      .then(() => navigate("/topics"))
       .catch((error) => console.error("Erro ao Atualizar tópico:", error));
   };
 
@@ -62,7 +62,7 @@ export default function EditTopic() {
       <div className="w-full h-full bg-gradient-to-b from-cyan-500 to-slate-700 pt-8">
         <div className="pb-4 pl-8">
           <IoArrowBackCircle
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/topics")}
             className="size-12 text-slate-700 cursor-pointer transition-all duration-500 hover:text-white"
           />
         </div>

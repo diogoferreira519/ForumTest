@@ -3,8 +3,9 @@ import Footer from "../partials/Footer";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoArrowBackCircle } from "react-icons/io5";
-
+import { useCookies } from "react-cookie";
 export default function AddTopicHome() {
+  const [cookies, setCookie] = useCookies(["isAuth"]);
   const [items, setItems] = useState();
   useEffect(() => {
     const baseUrl = `https://api-forum-ef2ae-default-rtdb.asia-southeast1.firebasedatabase.app`;
@@ -20,7 +21,7 @@ export default function AddTopicHome() {
   const [title, setTitle] = useState("");
   const baseUrl = `https://api-forum-ef2ae-default-rtdb.asia-southeast1.firebasedatabase.app`;
 
-  const name = "Diogo";
+  const name = cookies.isAuth.user;
   let numberOfTopics;
   let newTopicId;
   if (items) {
@@ -28,8 +29,7 @@ export default function AddTopicHome() {
     newTopicId = numberOfTopics;
   }
 
-  const photo =
-    "https://conteudo.imguol.com.br/c/entretenimento/ec/2023/08/19/cachorro-balltze-famoso-por-meme-morre-aos-12-anos-1692475811229_v2_1x1.png";
+  const photo = cookies.isAuth.image;
   const postNewTopic = {
     [newTopicId]: {
       comments: "0",
@@ -53,14 +53,13 @@ export default function AddTopicHome() {
       alert("Não pode deixar a descrição vazia");
       return;
     }
-      fetch(`${baseUrl}/topics/.json`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(postNewTopic),
-      })
-        .then(() => navigate("/"))
-        .catch((error) => console.error("Erro ao criar tópico:", error));
-    
+    fetch(`${baseUrl}/topics/.json`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(postNewTopic),
+    })
+      .then(() => navigate("/topics"))
+      .catch((error) => console.error("Erro ao criar tópico:", error));
   };
 
   return (
@@ -69,7 +68,7 @@ export default function AddTopicHome() {
       <div className="w-full h-full bg-gradient-to-b from-cyan-500 to-slate-700 pt-8">
         <div className="pb-4 pl-8">
           <IoArrowBackCircle
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/topics")}
             className="size-12 text-slate-700 cursor-pointer transition-all duration-500 hover:text-white"
           />
         </div>
